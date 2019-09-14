@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cursos</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Lista de Cursos y Alumnos</h1>
+		<!-- BEM -->
+		<div class="container__box">Seleccionar Especialidad
+			<select id="courses"></select>
+		</div>
+
+		<div class="container__box">
+			<div class="box__table">
+				<table id="collection-courses">
+					<thead>
+						<tr>
+							<td>Codigo</td>
+							<td>Asignatura</td>
+							<td>Costo</td>
+							<td>Vacantes</td>
+							<td>Matricula</td>
+						</tr>
+					</thead>
+					<tbody class="list__courses">
+					</tbody>
+				</table>
+				<table id="collection-students" style="display: none;">
+					<thead>
+						<tr>
+							<td>Nombre</td>
+							<td>Edad</td>
+							<td>Grado</td>
+							<td>Código</td>
+							<td>Estado</td>
+						</tr>
+					</thead>
+					<tbody class="list__students">
+					</tbody>
+				</table>
+				<div class="add__students" style="display: none;">
+					<label id="label">Agregar Alumnos...</label>
+				</div>
+
+				<div class="register__students" style="display: none;" data-course="">
+					<h2>Registo de Alumnos</h2>
+
+					<h3>Nombre:
+						<input class="clear" type="text" id="name" >
+					</h3>
+					<h3>Edad:
+						<input class="clear" type="text" id="age" >
+					</h3>
+					<h3>Grado:
+						<input class="clear" type="text" id="degree" >
+					</h3>
+					<h3>Código:
+						<input class="clear" type="text" id="cod" >
+					</h3>
+					<h3>Estado:
+						<input class="clear" type="text" id="status" >
+					</h3>
+					<button id="btn">Agregar</button>
+				  
+                    <button id="clean">Limpiar</button>
+                </div>
+		</div>
+	</div>
+
+	<script src="data.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

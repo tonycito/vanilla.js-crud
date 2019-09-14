@@ -1,0 +1,69 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #49A772;
+}
+
+.enroll-student {
+  cursor: pointer;
+  color: #3ecce2;
+}
+.status-student{
+  cursor: pointer;
+  color: #FA0202;
+}
+.status-student:hover{
+  color: #E39A23;
+}
+.no-student{
+  cursor: not-allowed;
+}
+
+.no-enroll {
+  cursor: not-allowed;
+}
+
+.enroll-student:hover {
+  color: #bcea0d;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+.box__table {
+  padding: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+.add__students{
+
+  color: #4D6DA7;
+}
+.add__students:hover {
+    cursor: pointer;
+    color: #6BAA2D;
+}
+#course{
+    color:aqua;
+}
